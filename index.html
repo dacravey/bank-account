@@ -15,40 +15,42 @@
 
         <div class="col-md-6">
           <h1>Highway Robbery</h1>
-          <h3><em>Welcome to the family!</em><h3>
             <span id="hideafterenter">
-
               <!-- <div class="form-group">
               <label for="name">Your name: </label>
               <input id="name" type="text" class="form-control" placeholder="Miles" autofocus>
             </div> -->
               <div class="initial-account">
+                <h3><em>Welcome to the family!</em><h3>
                 <form id="new-account">
                   <div class="form-group">
                     <label for="deposit">Initial Deposit:</label>
                     <input id="deposit" type="text" class="form-control" placeholder="110.00" >
                   </div>
 
-                  <button type="submit" class="btn">Create Account</button>
+                  <button type="submit" class="btn btn-primary">Create Account</button>
                 </form>
               </div>
             </span>
 
             <span id="existing">
+              <h3><em>You can check out anytime you'd like but your money can never leave</em><h3>
               <div class="initialized-account">
-                <form id="existing-account">
+                <form id="deposit">
                   <div class="form-group">
                     <label for="deposit">Deposit:</label>
                     <input id="deposit" type="text" class="form-control" placeholder="110.00" >
+                    <button type="submit" class="btn btn-success">Deposit</button>
+                  </form>
                   </div>
 
+                  <form id="withdraw">
                   <div class="form-group">
                     <label for="withdraw">Withdraw:</label>
                     <input id="withdraw" type="text" class="form-control" placeholder="00.00" >
-                  </div>
-
-                  <button type="submit" class="btn">Create Account</button>
+                  <button type="submit" class="btn btn-danger">Withdraw</button>
                 </form>
+              </div>
               </div>
             </div>
           </span>

@@ -20,7 +20,6 @@ $(document).ready(function() {
 
   $("form#new-account").submit(function(event) {
     event.preventDefault();
-
     var deposit = parseFloat($("input#deposit").val());
     newAccount.balance = deposit + newAccount.balance;
     $("#balance").text(newAccount.balance);
@@ -28,4 +27,21 @@ $(document).ready(function() {
     $("#hideafterenter").hide();
     $("#existing").show();
   });
+
+  $("form#deposit").submit(function(event) {
+    event.preventDefault();
+    var deposit = parseFloat($("input#deposit").val());
+    newAccount.balance = deposit + newAccount.balance;
+    $("#balance").text(newAccount.balance);
+    $(".result").show();
+  });
+
+  $("form#withdraw").submit(function(event) {
+    event.preventDefault();
+    var withdraw = parseFloat($("input#withdraw").val());
+    newAccount.balance = newAccount.balance - withdraw;
+    $("#balance").text(newAccount.balance);
+    $(".result").show();
+  });
+
 });
