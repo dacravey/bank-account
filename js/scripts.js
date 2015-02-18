@@ -25,6 +25,7 @@ $(document).ready(function() {
     newAccount.balance = deposit + newAccount.balance;
     $("#balance").text(newAccount.balance);
     $(".result").show();
-    $("#hideinitial").hide();
+    $("#hideafterenter").hide();
+    $("#existing").show();
   });
 });
