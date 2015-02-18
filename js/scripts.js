@@ -22,7 +22,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var deposit = parseFloat($("input#deposit").val());
-    newAccount.balance = deposit;
+    newAccount.balance = deposit + newAccount.balance;
     $("#balance").text(newAccount.balance);
     $(".result").show();
     $("#hideinitial").hide();
