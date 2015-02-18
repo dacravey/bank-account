@@ -30,8 +30,8 @@ $(document).ready(function() {
 
   $("form#deposit").submit(function(event) {
     event.preventDefault();
-    var deposit = parseFloat($("input#deposit").val());
-    newAccount.balance = deposit + newAccount.balance;
+    var newdeposit = parseFloat($("input#newdeposit").val());
+    newAccount.balance = newdeposit + newAccount.balance;
     $("#balance").text(newAccount.balance);
     $(".result").show();
   });
